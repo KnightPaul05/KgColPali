@@ -1,2 +1,5 @@
-# KgColPali
-Get a better understanding on the effect of RAG over LLMs
+# Mini-projet RAG avec ColPali
+
+## Description :
+Pipeline **RAG** base sur **ColPali** pour interroger des **PDF** (texte + mise en page + figures)
+

@@ -1,0 +1,25 @@
+Indexer des PDFs :
+
+python rag_colpali_miniproject.py index \
+  --pdf-dir ./data/pdfs \
+  --img-dir ./data/images \
+  --index-dir ./data/index
+
+
+Rechercher (top-k pages) :
+
+python rag_colpali_miniproject.py query \
+  --index-dir ./data/index \
+  --img-dir ./data/images \
+  --question "Quels sont les symptômes de la phénylcétonurie ?" \
+  --k 5
+
+generer une reponse LLM ( option : Gemini) :
+
+export GOOGLE_API_KEY="ta_clef"   # Windows PowerShell: $env:GOOGLE_API_KEY="ta_clef"
+python rag_colpali_miniproject.py answer \
+  --index-dir ./data/index \
+  --img-dir ./data/images \
+  --question "Quels sont les symptômes de la phénylcétonurie ?" \
+  --k 5
+

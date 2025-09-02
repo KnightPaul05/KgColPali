@@ -1,0 +1,20 @@
+# Core
+torch>=2.2
+transformers>=4.42
+faiss-cpu>=1.8.0
+numpy>=1.26
+pillow>=10.3.0
+tqdm>=4.66
+pydantic>=2.7
+
+# PDF -> images
+pdf2image>=1.17.0
+
+# ColPali retriever
+colpali-engine>=0.2.3
+
+# Fallback texte-only (au cas où ColPali n'est pas dispo)
+sentence-transformers>=3.0.1
+
+# (Optionnel) LLM Google Gemini
+google-generativeai>=0.8.0
